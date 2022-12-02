@@ -1,5 +1,8 @@
+@import "./partials/_hero.scss";
+@import "./partials/gallery";
+@import "./partials/_foot";
+@import "./partials/_font.scss";
 
-$font-stack: Avenir Next;
 $primary-color-dark: #323232;
 $primary-color-mid: #afafaf;
 $primary-color-light: #ffffff;
@@ -16,51 +19,111 @@ $secondary-color-light: #fafafa;
 a{
     text-decoration: none;
 }
+.container{
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    overflow: auto;
+    
+}
 
-.hero{
+.navbar{
+    display: flex;
+    align-items: center;
     background-color: $primary-color-dark;
     color: $primary-color-light;
-    height: 600px;
+    height: 85px;
+    padding: 0 100px;
+    position: fixed;
+    width: 100%;
+    
 
-    nav {
+    ul{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    li {
+        padding: 15px;
+        font-family: avenir-demi;
+        font-size: 14px;
+        font-weight: 600;
 
-        ul{
-            display: flex;
-            list-style-type: none;
+        .select{
+            padding-bottom: 30px;
+            border-bottom: solid 3px $primary-color-light ;
         }
-        
-        li {
-            padding: 15px;
 
-            a:hover{
-                border-bottom: 3px solid $primary-color-light ;
-            }
+        a:hover{
+            padding-bottom: 30px;
+            border-bottom: 3px solid $primary-color-light ;
+        }
+
+    
+
+       
     }
     a {
     color:$primary-color-light;
     }
+  
 
+    }
     
-    }
-    &-content{
-        color: $primary-color-light;
-    }
-}
 
-.container{
-    max-width: 1100px;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: auto;
-}
+
+
 
 .logo{
-    background-image: url("../assets/logos/Logo-bandsite.svg");
-    background-repeat: no-repeat;
     width: 100%; 
-    height: 50px;
-    margin-top: 10px;
+    height: 20px;
+    margin-right: 20px;
 }
+ 
+@media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .cards {
+        display: block;
+        width: 50%;
+        text-align: center;
+
+        img {
+            display: block;
+            max-width: 100vw;
+
+        }
+      }
+  
+    .boxes .container {
+      display: block;
+      text-align: center;
+    }
+
+    .header {
+
+        max-height: 300px;
+        min-height: auto;
+
+    }
+  }
+  
+  
+
+    .body-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        
+        
+        }
+
+    
+
+
+
+
