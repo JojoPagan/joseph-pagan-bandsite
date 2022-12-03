@@ -80,37 +80,7 @@ a{
     margin-right: 20px;
 }
  
-@media (max-width: 768px) {
-    .header .container {
-      flex-direction: column;
-      padding-top: 20px;
-      text-align: center;
-    }
 
-    .cards {
-        display: block;
-        width: 50%;
-        text-align: center;
-
-        img {
-            display: block;
-            max-width: 100vw;
-
-        }
-      }
-  
-    .boxes .container {
-      display: block;
-      text-align: center;
-    }
-
-    .header {
-
-        max-height: 300px;
-        min-height: auto;
-
-    }
-  }
   
   
 
@@ -121,7 +91,71 @@ a{
         
         
         }
+        @media (max-width: 767px) {
+            .logo{
+                width: 100%; 
+                height: 25px;
+                margin-top: 16px;
+                margin-left: 15px;
+                
+            }
+            
+            .navbar{
+                flex-direction: column;
+                align-items: center;
+                height: 112px;
 
+            li {
+                padding: 5px 75px;
+                font-family: avenir-demi;
+                font-size: 24px;
+                font-weight: 600;
+            
+                    .select{
+                        padding-bottom: 15px;
+                        border-bottom: solid 3px $primary-color-light ;
+                    }
+            
+                    a:hover{
+                        padding-bottom: 15px;
+                        border-bottom: 3px solid $primary-color-light ;
+                    }
+            }
+                
+            }
+            
+            .header .container {
+              flex-direction: column;
+              padding-top: 20px;
+              text-align: center;
+            }
+        
+            .cards {
+                display: block;
+                width: 50%;
+                text-align: center;
+        
+                img {
+                    display: block;
+                    max-width: 100vw;
+        
+                }
+              }
+          
+            .boxes .container {
+              display: block;
+              text-align: center;
+            }
+        
+            .header {
+        
+                max-height: 300px;
+                min-height: auto;
+        
+            }
+         }
+
+         
     
 
 
