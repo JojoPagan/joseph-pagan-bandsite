@@ -34,12 +34,14 @@ footer {
 
 .foot {
   display: flex;
+  align-items: flex-start;
   color: #ffffff;
   justify-content: space-between;
 }
 .foot h3 {
   margin: 0;
-  padding-right: 50px;
+  padding-right: 0px;
+  width: 300px;
 }
 .foot ul {
   display: flex;
@@ -62,6 +64,10 @@ footer {
 }
 .foot a {
   color: #ffffff;
+}
+
+.foot-nav {
+  width: 70%;
 }
 
 .icon {
@@ -94,6 +100,10 @@ footer {
   height: 20px;
   margin-top: 15px;
   justify-content: flex-end;
+}
+
+.footer-logo-mobile {
+  display: none;
 }
 
 @font-face {
@@ -361,5 +371,106 @@ a {
   }
   .foot a {
     color: #ffffff;
+  }
+  .foot-nav {
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .content {
+    min-width: 100%;
+    margin-right: 0px;
+    line-height: 30px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0px 0px;
+  }
+  .footer-logo-mobile {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 25px 0;
+    align-items: start;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  h2 {
+    font-family: avenir-demi;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    padding: 25px 0px 36px 50px;
+  }
+  .header {
+    min-height: 550px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 225px 0px 0px 35px;
+  }
+  .header .container h1 {
+    font-size: 60px;
+    padding-left: 0px;
+  }
+  .main-container {
+    padding: 0 100px;
+  }
+  .quote {
+    margin: 32px 0 32px 0;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+  .body-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .main-body-font {
+    font-size: 18px;
+  }
+  .main-body-content {
+    min-width: 100%;
+    margin-left: 20px;
+    margin-bottom: 24px;
+  }
+  .gallery-container {
+    padding: 24px 48px;
+  }
+  .cards img {
+    margin: 10px 10px 10px 10px;
+    max-width: 32%;
+  }
+  .content {
+    min-width: 35%;
+    margin-right: 0px;
+    line-height: 30px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0px 0px;
+  }
+  .footer-logo {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=bio.css.map */
