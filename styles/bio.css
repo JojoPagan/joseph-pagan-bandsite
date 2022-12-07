@@ -106,6 +106,13 @@ footer {
   display: none;
 }
 
+.foot-link {
+  color: #ffffff;
+}
+.foot-link a {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: avenir-regular;
   src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
