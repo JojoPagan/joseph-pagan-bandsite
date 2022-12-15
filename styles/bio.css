@@ -106,6 +106,13 @@ footer {
   display: none;
 }
 
+.foot-link {
+  color: #ffffff;
+}
+.foot-link a {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: avenir-regular;
   src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
@@ -157,6 +164,11 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+textarea {
+  font-family: avenir-regular;
+  font-size: 14px;
 }
 
 .main-body-font {
@@ -239,6 +251,60 @@ a {
 .quote {
   margin: 36px 0 24px 0;
   width: 75%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #323232;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+.comment-form .name-form-feild {
+  height: 48px;
+  padding: 16px;
+  color: #323232;
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  background-color: #fafafa;
+  margin-top: 4px;
+}
+.comment-form .comment-form-feild {
+  height: 96px;
+  padding: 16px;
+  color: #323232;
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  background-color: #fafafa;
+  margin-top: 4px;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  border-radius: 4px;
+  border: none;
+  align-items: flex-end;
+  background-color: #323232;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.avatar {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.avatar-place {
+  display: flex;
 }
 
 .body-container {

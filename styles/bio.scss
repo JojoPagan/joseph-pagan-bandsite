@@ -107,6 +107,64 @@ a{
 
  }
 
+ input:focus,
+ select:focus,
+ textarea:focus {
+   outline: none;
+   box-shadow: 0 0 0 1px $primary-color-dark;
+ }
+ 
+ .comment-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+
+    .name-form-feild{
+        height: 48px;
+        padding: 16px;
+        color: $primary-color-dark;
+        border-radius: 4px;
+        border: solid 1px $secondary-color-mid;
+        background-color: $secondary-color-light;
+        margin-top: 4px;
+    }
+
+    .comment-form-feild{
+        height: 96px;
+        padding: 16px;
+        color: $primary-color-dark;
+        border-radius: 4px;
+        border: solid 1px $secondary-color-mid;
+        background-color: $secondary-color-light;
+        margin-top: 4px;
+    
+    }
+ }
+
+ button{
+    height: 40px;
+    width:150px;
+    border-radius: 4px;
+    border: none;
+    align-items: flex-end;
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    font-size: 18px;
+    margin-top: 30px;
+   
+ }
+
+ .avatar{
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+
+}
+    .avatar-place{
+        display: flex;
+    }
+
     .body-container{
         display: flex;
         align-items: flex-start;
