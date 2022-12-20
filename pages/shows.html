@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Band Site</title>
   
-  <link rel="stylesheet" href="styles/bio.css" />
+  <link rel="stylesheet" href="../styles/shows.css" />
  
   
 </head>
@@ -13,71 +13,45 @@
     <nav class="navbar">
       <ul>
         <li>
-         <img class="logo" src="./assets/logos/Logo-bandsite.svg" alt="logo">
+          <a href="../index.html"><img class="logo" src="../assets/logos/Logo-bandsite.svg" alt="logo"></a>
        </li>
        </ul>
           <ul>
             <li>
-              <a href="#">Biography</a>
+              <a href="../index.html">Biography</a>
             </li>
             <li>
-              <a class="select" href="#">Shows</a>
+              <a class="select">Shows</a>
             </li>
           </ul>
         </div>
       </nav>
   
-      <header class="header">
-        <div class="container">
-            <h1>Shows</h1>
+      <header class="header-shows">
+        <div class="header-shows-container">
+          <div>
+          <h2 class="album-text">Beauiful Beasts Album</h2>
+          <h1>Queen of Yello<br>x For Strings</h1>
           </div>
-      </header>
-
-      <main>
-        <div>
-          <h2>About The Musicians</h2>
-          <div class="main-container">
-            <img class="main-image" src="./assets/images/band.jpg" alt="then Band Image" />
-            <h3 class="quote">"We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'"</h3>
-            <h4>- Bryan Teddy, lead vocalist of The Bees Knees</h4>
+          <div class="song-container">
+            <iframe width="100%" height="150px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1092394276&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </div>
+        </div>
+          
           
 
-          <h3 class="quote">The Bees Knees</h3>
 
-         <div class="body-container">
-            <div class="main-body-font"> 
-              <p >
-              The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Toikens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat's Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.
-              </p>
-            </div>
-            <div class="main-body-font">
-              <p class="main-body-content">
-              From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band's original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as "The Hive" and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.
-              </p>
-            </div>
-          </div> 
-        </div>    
-        </div>
-      </main>
-  <section class="gallery-container" >
-      <h3>Photo Gallery</h3>
-      <gallery class="cards">
-        <img src="./assets/images//Photo-gallery-1.jpg" alt="concert image with laser">
-        <img src="./assets/images//Photo-gallery-2.jpg" alt="Concert girl dancing">
-        <img src="./assets/images//Photo-gallery-3.jpg" alt="Concert hands in the air">
-      </gallery>
-      <gallery class="cards">
-        <img src="./assets/images//Photo-gallery-4.jpg" alt="Concert girl sitting on shoulders">
-        <img src="./assets/images//Photo-gallery-5.jpg" alt="concert streamers">
-        <img src="./assets/images//Photo-gallery-6.jpg" alt="cponcert singer">
-      </gallery>
-      <gallery class="cards">
-        <img src="./assets/images//Photo-gallery-7.jpg" alt="Light show">
-        <img src="./assets/images//Photo-gallery-8.jpg" alt="mix board">
-        <img src="./assets/images//Photo-gallery-9.jpg" alt="confetti">
-      </gallery>
-    </section>
-    </body>
+
+      </header>
+
+       <!-- table-content-starts -->
+    <main class="shows">
+      <h2>Shows</h2>
+      <div class="shows__section"></div>
+    </main>
+    <!-- table-content-starts -->
+ 
+
 
     <footer >
       <nav class="foot">
@@ -88,19 +62,19 @@
         </ul>
         <ul class="foot-nav">
            <li>
-            <a href="#"><img class="icon" src="./assets/icons/SVG/Icon-instagram.svg" alt="Instagram logo"></a>
+            <a href="#"><img class="icon" src="../assets/icons/SVG/Icon-instagram.svg" alt="Instagram logo"></a>
           </li>
           <li>
-            <img class="icon" src="./assets/icons/SVG/Icon-facebook.svg" alt="Facebook logo">
+            <img class="icon" src="../assets/icons/SVG/Icon-facebook.svg" alt="Facebook logo">
           </li>
           <li>
-            <img class="icon" src="./assets/icons/SVG/Icon-twitter.svg" alt="twitter logo">
+            <img class="icon" src="../assets/icons/SVG/Icon-twitter.svg" alt="twitter logo">
           </li>
         </div>
         </ul>
         <ul>
           <li>
-            <img class="footer-logo" src="./assets/logos/Logo-bandsite.svg" alt="logo">
+            <img class="footer-logo" src="../assets/logos/Logo-bandsite.svg" alt="logo">
           </li>
         </ul>
       </div>
@@ -142,9 +116,12 @@
       </div>
     </div>     
     <div>
-      <img class="footer-logo-mobile" src="./assets/logos/Logo-bandsite.svg" alt="logo">
+      <img class="footer-logo-mobile" src="../assets/logos/Logo-bandsite.svg" alt="logo">
       Copyright The Bees Knees © 2021 All Rights Reserved
     </div>
 
     </footer>
+
+    <script src="../scripts/build-shows-page.js"></script>
+    </body>
 </html>

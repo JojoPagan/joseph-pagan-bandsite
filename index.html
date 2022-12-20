@@ -13,15 +13,15 @@
     <nav class="navbar">
       <ul>
         <li>
-         <img class="logo" src="./assets/logos/Logo-bandsite.svg" alt="logo">
+          <a href="#"><img class="logo" src="./assets/logos/Logo-bandsite.svg" alt="logo"></a>
        </li>
        </ul>
           <ul>
             <li>
-              <a class="select" href="#">Biography</a>
+              <a class="select" >Biography</a>
             </li>
             <li>
-              <a href="#">Shows</a>
+              <a href="./pages/shows.html">Shows</a>
             </li>
           </ul>
         </div>
@@ -79,36 +79,39 @@
       </gallery>
     </section>
 
-    <section>
+ <!--Comment Section-->
+    <section class="comment">
       <h2>Join the Conversation</h2>
-<div class="avatar-place">
+<div class="comment__main-container"> 
       <div>
-        <img class="avatar" src="./assets/images/Mohan-muruge.jpg" alt="then Band Image" />
-      
+        <img class="comment__avatar" src="./assets/images/Mohan-muruge.jpg" alt="profile picture">
       </div>
 
       <!--Comment form-->
-      <form id="comment-form" class="comment-form" novalidate>
+        <form id="appointment-form" class="comment__input-container" novalidate>
         
-     
+          
         
             <!-- Name input -->
-            <label for="fullName">NAME</label>
-            <input class="name-form-feild" type="text" name="fullName" id="fullName" placeholder="Enter your name" required>
+            <label class="comment__input-container--text" for="fullName">NAME</label>
+            <input class="comment__text-container comment__text-container--name" type="text" name="name" id="name" placeholder="Enter your name" required>
 
             <!-- Textarea -->
-           <label for="comments">COMMENT</label>
-           <textarea class="comment-form-feild" name="comments" id="comments" placeholder="Add a new comment"></textarea>
+           <label class="comment__input-container--text" for="comments">COMMENT</label>
+           <textarea  class="comment__text-container comment__text-container--comment" name="comment" id="comment" placeholder="Add a new comment"></textarea>
 
-        <button type="submit" class="appointment-form__button">COMMENT</button>
-  
+          
+        <button type="submit" class="comment__button">COMMENT</button>
+    
     </form>
 </div>
+<div class="comment__display-comment"></div>
+</section>
 
 
-    </section>
-    </body>
 
+
+<!--footer-->
     <footer >
       <nav class="foot">
         <ul>
@@ -177,4 +180,6 @@
     </div>
 
     </footer>
+    <script src="./scripts/index.page.js"></script>
+  </body>
 </html>
