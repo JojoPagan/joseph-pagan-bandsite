@@ -316,11 +316,12 @@ button {
 .header-shows-container {
   min-height: 550px;
   background-color: rgba(50, 50, 50, 0.5);
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  padding: 225px 0px 0px 35px;
+  padding: 100px 0px 0px 35px;
 }
 
 .album-text {
@@ -338,6 +339,44 @@ button {
 }
 
 @media (max-width: 767px) {
+  .header-shows {
+    min-height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/hero-shows.jpg");
+  }
+  .header-shows-container {
+    min-height: 400px;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 100px 0px 0px 35px;
+  }
+  .album-text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .song-container {
+    padding-bottom: 16px;
+    margin-left: -20px;
+    height: 400px;
+    display: flex;
+  }
+  .header-title {
+    margin-bottom: 25px;
+  }
+  h1 {
+    padding: 0px 0px 16px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
   h2 {
     font-size: 24px;
     line-height: 32px;

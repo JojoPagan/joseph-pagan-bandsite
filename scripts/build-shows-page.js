@@ -33,14 +33,13 @@ let shows = [
   ];
   
   function table(arr) {
-    //container that holds it all ("mother-container")
+   
     let displaySection = document.querySelector(".shows__section");
 
     let allShowsSection = document.createElement("div");
     allShowsSection.classList.add("shows__section-all");
     displaySection.appendChild(allShowsSection);
   
-    //header container for labels (tablet&desktop)
     let titleSection = document.createElement("div");
     titleSection.classList.add("shows__title-section");
     allShowsSection.appendChild(titleSection);
@@ -67,12 +66,11 @@ let shows = [
     buttonSection.innerText = "BUY TICKETS";
   
     for (let i = 0; i < shows.length; i++) {
-      //Container for all
+
       let baodyAll = document.createElement("div");
       baodyAll.classList.add("shows__body-all");
       allShowsSection.appendChild(baodyAll);
   
-      //Dates
       let dateLabel = document.createElement("h3");
       dateLabel.classList.add("shows__body-all--date-label");
       baodyAll.appendChild(dateLabel);
@@ -84,7 +82,6 @@ let shows = [
   
       date.innerText = arr[i]["date"];
   
-      //Venues
       let venueLabel = document.createElement("h3");
       venueLabel.classList.add("shows__body-all--venue-label");
       baodyAll.appendChild(venueLabel);
@@ -95,7 +92,7 @@ let shows = [
       baodyAll.appendChild(venue);
   
       venue.innerText = arr[i]["venue"];
-      //Location
+
       let locationLabel = document.createElement("h3");
       locationLabel.classList.add("shows__body-all--location-label");
       baodyAll.appendChild(locationLabel);
@@ -106,7 +103,7 @@ let shows = [
       baodyAll.appendChild(location);
   
       location.innerText = arr[i]["location"];
-      //Button
+     
       let buttonContainer = document.createElement("div");
       buttonContainer.classList.add("shows__body-all--button-container");
       baodyAll.appendChild(buttonContainer);
