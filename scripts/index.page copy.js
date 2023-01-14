@@ -1,13 +1,27 @@
-//API key
-const apiKey = "e0eea5f0-0f8c-4b54-9fc4-ff50843766d4";
-// URL where all my comment information is stored:
-//project-1-api.herokuapp.com/?api_key=e0eea5f0-0f8c-4b54-9fc4-ff50843766d4
+//posted comments
+let comments = [
+    {
+      name: "Connor Walton",
+      date: "02/17/2021",
+      comment:"This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
+    },
 
-//Default comments
-function displayComments(arr) {
- 
-  let commentContainer = document.querySelector(".comment__default-comment");
-  commentContainer.innerHTML = "";
+    {
+      name: "Emilie Beach",
+      date: "01/17/2021",
+      comment:"I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
+    },
+    {
+      name: "Miles Acosta",
+      date: "12/20/2020",
+      comment:"I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough"
+    }
+  ];
+  
+  //comment entry
+  function displayComments(arr) {
+    
+    let commentContainer = document.querySelector(".comment__display-comment");
   
     for (let i = 0; i < arr.length; i++) {
       
