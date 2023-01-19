@@ -230,6 +230,8 @@ a{
             }
 
             .header{
+            
+                
 
                 
                 min-height: 420px;
@@ -508,26 +510,3 @@ and (max-width: 1279px)  {
 }
 
 
-/* sprint 3 */
-
-.comment__delete-button-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 32px;
-  }
-  
-  .comment__delete-button {
-    font-family: avenir-demi;
-    border-radius: 2px;
-    color: #323232;
-    width: 64px;
-    height: 32px;
-    border: 1px solid #e1e1e1;
-    background-color: #ffffff;
-  }
-  
-  .comment__delete-button:hover {
-    color: #ffffff;
-    background-color: #323232;
-  }
-  

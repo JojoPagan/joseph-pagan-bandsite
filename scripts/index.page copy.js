@@ -127,4 +127,3 @@ let comments = [
     let clearInput = document.querySelector(".comment__input-container");
     clearInput.reset();
   });
-
