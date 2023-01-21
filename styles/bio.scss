@@ -186,7 +186,22 @@ a{
             margin-left: 60px;
             margin-bottom: 48px;
         }
+        .header{
 
+            background-image: url(../../assets/images/hero-bio.jpg);
+            min-height: 900px;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            .container{
+                display: flex;
+                align-items: center;
+                margin: auto;
+                padding: 400px 36px;
+            }
+        
+        }
 
 
         @media (max-width: 767px) {

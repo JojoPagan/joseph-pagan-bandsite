@@ -1,17 +1,3 @@
-.header {
-  background-image: url(../../assets/images/hero-bio.jpg);
-  min-height: 900px;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  padding: 400px 36px;
-}
-
 footer {
   background-color: #323232;
   padding: 50px 100px;
@@ -359,12 +345,6 @@ button {
     font-size: 14px;
     line-height: 22px;
   }
-  .song-container {
-    padding-bottom: 16px;
-    margin-left: -20px;
-    height: 400px;
-    display: flex;
-  }
   .header-title {
     margin-bottom: 25px;
   }
@@ -407,7 +387,8 @@ button {
     border-bottom: 3px solid #ffffff;
   }
   .song-container {
-    margin: auto;
+    margin: 10px -15px;
+    padding-bottom: 16px;
     height: 100px;
     width: 400px;
     display: flex;
@@ -536,7 +517,7 @@ button {
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
-    padding: 25px 0px 36px 50px;
+    padding: 25px 0px 36px 120px;
   }
   .header {
     min-height: 550px;
@@ -602,6 +583,23 @@ button {
     height: 50px;
     margin-top: 15px;
     justify-content: flex-end;
+  }
+  .song-container {
+    padding-bottom: 16px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 100px;
+  }
+  .header-shows-container {
+    min-height: 550px;
+    background-color: rgba(50, 50, 50, 0.5);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
   }
 }
 /* mobile-schedule*/
