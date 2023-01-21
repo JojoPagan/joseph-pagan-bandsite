@@ -23,10 +23,11 @@
     height: 36px;
     border-radius: 50%;
     margin-top: 25px;
+    margin-right: 15px;
   }
   .comment__main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: 1px solid #e1e1e1;
   }
   .comment__input-container {

@@ -14,37 +14,37 @@ const apiKey = "e0eea5f0-0f8c-4b54-9fc4-ff50843766d4";
     let dateString =
       m.getUTCMonth() + 1 + "/" + m.getUTCDate() + "/" + m.getUTCFullYear();
       
-      let displaySection = document.createElement("div");
+      const displaySection = document.createElement("div");
       displaySection.classList.add("comment__display");
       commentContainer.appendChild(displaySection);
   
-      let avatarImage = document.createElement("div");
+      const avatarImage = document.createElement("div");
       avatarImage.classList.add("comment__comment__avatar-section-name");
       displaySection.appendChild(avatarImage);
   
-      let titleSection = document.createElement("div");
+      const titleSection = document.createElement("div");
       titleSection.classList.add("comment__header");
       displaySection.appendChild(titleSection);
   
-      let image = document.createElement("div");
+      const image = document.createElement("div");
       image.classList.add("comment__title--image-avatar");
       avatarImage.appendChild(image);
   
-      let name = document.createElement("h2");
+      const name = document.createElement("h2");
       name.classList.add("comment__title--name");
       name.innerText = arr[i]["name"];
       titleSection.appendChild(name);
   
-      let date = document.createElement("h3");
+      const date = document.createElement("h3");
       date.classList.add("comment__title--date");
       date.innerText = dateString;
       titleSection.appendChild(date);
   
-      let CommentText = document.createElement("div");
+      const CommentText = document.createElement("div");
       CommentText.classList.add("comment__text-content-display");
       displaySection.appendChild(CommentText);
   
-      let comment = document.createElement("p");
+      const comment = document.createElement("p");
       comment.classList.add("comment__text-content-display--comment");
       comment.innerText = arr[i]["comment"];
       CommentText.appendChild(comment);
