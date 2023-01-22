@@ -70,24 +70,6 @@ let shows = [
       const baodyAll = document.createElement("div");
       baodyAll.classList.add("shows__body-all");
       allShowsSection.appendChild(baodyAll);
-
-      const rows = document.querySelectorAll('.shows__body-all');
-
-    rows.forEach(row => {
-      row.addEventListener('mouseover', function() {
-    this.style.backgroundColor = '#FAFAFA';
-     });
-    row.addEventListener('mouseout', function() {
-    if (!this.classList.contains('selected')) {
-      this.style.backgroundColor = '';
-    }
-    });
-   row.addEventListener('click', function() {
-    this.style.backgroundColor = '#E1E1E1';
-   });
-});
-
-
   
       const dateLabel = document.createElement("h3");
       dateLabel.classList.add("shows__body-all--date-label");
